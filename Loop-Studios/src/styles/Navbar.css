@@ -1,0 +1,13 @@
+img {
+    height: 213px;
+}
+
+
+ #Mobile_Title {
+        margin-top: 1em;
+        margin-left: 1em; 
+        text-decoration: none;
+        font-size: 30px;
+        color: white;
+        z-index: 7;
+    }

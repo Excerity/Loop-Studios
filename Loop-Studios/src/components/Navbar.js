@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
-import './Navbar.css'
+import '../styles/Navbar.css'
 import styled, {createGlobalStyle} from "styled-components"
+import { Link } from "gatsby"
 
 
 const Global = createGlobalStyle`
@@ -9,7 +10,7 @@ body {
     padding: 0;
     overflow-x: hidden;
 }
-`
+`;
 
 const MenuIcon = styled.button`
 position: fixed;
@@ -24,6 +25,10 @@ background: transparent;
 border: none;
 cursor: pointer;
 z-index: 5;
+@media (min-width: 768px) {
+    display: none;
+}
+
 
 div {
     width: 1.5rem;
@@ -32,6 +37,7 @@ div {
     border-radius: 5px;
     transform-origin: 1px;
     position: relative;
+    background-color: white;
 
 
     :first-child {
@@ -46,17 +52,17 @@ div {
         transform: ${({ nav }) => (nav ? 'rotate(-45deg)' : 'rotate(0)')}
     }
 }
-`
+`;
 
 const MenuLinks = styled.nav`
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: left;
     text-align: left;
     height: 100vh;
     width: 100%;
-    background: blue;
+    background: black;
     color: white;
     font-size: 5vh;
     position: absolute;
@@ -80,49 +86,100 @@ a {
 
 }
 
-.Mobile_title {
+.Hamburger_Mobile_title{
     margin-left: .5em;
     margin-top: -9em;
 }
-`
+`;
+const DesktopNav = styled.nav`
+display: none;
+
+@media (min-width: 768px) {
+ 
+     display: flex;
+     flex-flow: row nowrap;
+     justify-content: space-evenly;
+
+.nav-links {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+
+}
+}
 
 
+
+li {
+    margin-right: 1em;
+    margin-top: 4em;
+}
+
+a {
+    text-decoration: none;
+    // color: white;
+
+`;
+ 
 const Navbar = () => {
 
     const [nav, showNav] = useState(false)
-
+ 
 
     return (
         <nav className='Navbar'>
-
             <div>
             <Global />
+            <h5 id='Mobile_Title'>loopstudios</h5> 
             <MenuIcon nav={nav} onClick={() => showNav(!nav)}>
             <div />
             <div />
             <div />
             </MenuIcon>
             <MenuLinks nav={nav}>
-                <h5 className='Mobile_title'>loopstudios</h5>
+                <h5 className='Hamburger_Mobile_title'> <a href='#'>loopstudios</a></h5>
             <ul>
                 <li>
-                    <a href="#">About</a>
+                    <Link to="/">About</Link>
                 </li>
                 <li>
-                    <a href="#">Careers</a>
+                    <Link to="/">Careers</Link>
                 </li>
                 <li>
-                    <a href="#">Events</a>
+                    <Link to="/">Events</Link>
                 </li>
                 <li>
-                    <a href="#">Products</a>
+                    <Link to="/">Products</Link>
                 </li>
                 <li>
-                    <a href="#">Support</a>
+                    <Link to="/">Support</Link>
                 </li>
             </ul>
             </MenuLinks>
-            <h2 id='title'>loopstudios</h2>
+            <DesktopNav>
+            <ul className="nav-links">
+            <li id='title'>
+            <Link to='#'>loopstudios</Link>
+            </li>
+                <li>
+                    <Link to='#' className="Links">About</Link>
+                </li>
+                <li>
+                    <Link to='#' className="Links">Careers</Link>
+                </li>
+                <li>
+                    <Link to='#' className="Links">Events</Link>
+                </li>
+                <li>
+                    <Link to='#' className="Links">Products</Link>
+                </li>
+                <li>
+                    <Link to='#' className="Links">Support</Link>
+                </li>
+            </ul>
+            </DesktopNav>
+            
             </div>
         </nav>
     )

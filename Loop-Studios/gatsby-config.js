@@ -12,5 +12,14 @@ module.exports = {
       options: {
       },
     },
+    {
+    resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Advent Pro, Alegreya Sans SC'],
+        },
+      },
+    },
+    `gatsby-plugin-sass`,
   ],
 }

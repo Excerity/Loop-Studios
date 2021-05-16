@@ -1,11 +1,13 @@
 import React from "react"
-import Navbar from "../components/Navbar"
+import Header from "../components/Header"
+import Layout from '../components/Layout'
 
-export default function Home() {
-  return <div>
-    <Navbar/>
- 
-  </div>
+ const IndexPage = () => {
+  return (
+    <Layout>
+      
+    </Layout>
 
+  )
 }
-   
+   export default IndexPage
