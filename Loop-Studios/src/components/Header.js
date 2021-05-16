@@ -4,6 +4,7 @@ import Layout from './Layout'
 import Hero from '../../mobile/image-hero.jpg'
 import '../styles/Header.css'
 import MobileRect from './MobileRect'
+import LeaderInteractive from './LeaderInteractive'
 
 const Header = () => {
     return (
@@ -11,6 +12,7 @@ const Header = () => {
             <Navbar/>
             <img id='Hero' src={Hero} alt=""/>
             <MobileRect/>
+            <LeaderInteractive/>
             </div>
     )
 }
