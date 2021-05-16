@@ -5,6 +5,8 @@ import Hero from '../../mobile/image-hero.jpg'
 import '../styles/Header.css'
 import MobileRect from './MobileRect'
 import LeaderInteractive from './LeaderInteractive'
+import CreationSection from './CreationSection'
+
 
 const Header = () => {
     return (
@@ -13,6 +15,7 @@ const Header = () => {
             <img id='Hero' src={Hero} alt=""/>
             <MobileRect/>
             <LeaderInteractive/>
+            <CreationSection/>
             </div>
     )
 }

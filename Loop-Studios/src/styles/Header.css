@@ -55,8 +55,8 @@
             font-size: 30px;
             font-family: 'Alegreya Sans SC', sans-serif;
             font-weight: 100;
-            margin: auto;
-            width: 50%;
+            text-align: center;
+          
         }
 
         .Vr_Title1 {
@@ -68,8 +68,64 @@
             margin: auto;
             width: 50%;
             margin-top: .5em;
+            white-space: nowrap;
         }
 
         .centerText {
             margin-right: 3em;
+        }
+
+        .Creation_Header {
+            margin: auto;
+            width: 50%;
+            margin-top: 2em;
+            margin-bottom: 2em;
+            font-family: 'Alegreya Sans SC', sans-serif;
+            text-transform: uppercase;
+            white-space: nowrap;
+            font-weight: 100;
+        }
+
+        .Creation_Image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+            margin-top: 5em;
+            filter: brightness(75%);
+        }
+        .See_All {
+            border: black solid;
+            width: 15em;
+            height: 3em;
+            margin: auto;
+            margin-top: 3em;
+            margin-bottom: 4em;
+        }
+
+        .See_All > p {
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .Creation_Image_Text {
+            position: absolute;
+            margin-top: -3em;
+            color: white;
+            margin-left: 1em;
+            font-size: 32px;
+            text-transform: uppercase;
+            font-family: 'Alegreya Sans SC', sans-serif;
+            font-weight: 100;
+        }
+
+        .Second_Creation_Image_Text {
+            position: absolute;
+            margin-top: -2em;
+            color: white;
+            margin-left: 1em;
+            font-size: 32px;
+            text-transform: uppercase;
+            font-family: 'Alegreya Sans SC', sans-serif;
+            font-weight: 100;
         }
