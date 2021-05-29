@@ -8,7 +8,8 @@ import Instagram from '../../images/icon-instagram.svg'
 
 function Footer() {
     return (
-        <div className='footer'>
+        <footer>    
+        <div className='footer '>  
             <h3 className='footer_title'>loopstudios</h3>
             <ul className='footer_links'>
                 <li>About</li>
@@ -26,6 +27,7 @@ function Footer() {
 
             <p className='footer_copyright'>© 2021 Loopstudios. All rights reserved.</p>
             </div>
+            </footer>
     )
 }
 
