@@ -1,52 +1,82 @@
 import React from 'react'
 import '../styles/Header.css'
-import Curiosity from '../../mobile/image-curiosity.jpg';
-import Earth from '../../mobile/image-deep-earth.jpg';
-import Fisheye from '../../mobile/image-fisheye.jpg';
-import Above from '../../mobile/image-from-above.jpg'
-import Grid from '../../mobile/image-grid.jpg'
-import Arcade from '../../mobile/image-night-arcade.jpg'
-import Borealis from '../../mobile/image-pocket-borealis.jpg'
-import Soccer from '../../mobile/image-soccer-team.jpg'
+
 
 function CreationSection() {
     return (
-        <div className='heading'>
+        <div className='Creation-Section'>
             <h1 className='Creation_Header'>Our Creations</h1>
-            <section>
-            <img className='Creation_Image' src={Earth} alt=""/>
-            <p className='Creation_Image_Text'>Deep</p>
-            <p className='Second_Creation_Image_Text'>Earth</p>
+            <ul className='grid'>
 
-            <img className='Creation_Image' src={Arcade} alt=""/>
-            <p className='Creation_Image_Text'>Night</p>
-            <p className='Second_Creation_Image_Text'>Arcade</p>
+            <li className='earth'>
+            <div class="card-overlay"></div>
+            <h3 className='Creation_Image_Text'>
+                Deep <br/>
+                earth
+             </h3>
+            </li>
 
-            <img className='Creation_Image' src={Soccer} alt=""/>
-            <p className='Creation_Image_Text'>Soccer</p>
-            <p className='Second_Creation_Image_Text'>Team vr</p>
 
-            <img className='Creation_Image' src={Grid} alt=""/>
-            <p className='Creation_Image_Text'>The</p>
-            <p className='Second_Creation_Image_Text'>grid</p>
+            <li className='arcade'> 
+            <div class="card-overlay"></div>
+            <h3 className='Creation_Image_Text'>
+                Night <br/>
+                arcade
+            </h3>
+            </li>
+       
+            <li className='soccer'>
+            <div class="card-overlay"></div>
+            <h3 className='Creation_Image_Text'>
+                Soccer <br/>
+                team vr
+            </h3>
+            </li>
+            
+            <li className='the-grid'> 
+            <div class="card-overlay"></div>
+            <h3 className='Creation_Image_Text'>
+                The <br/>
+                grid
+             </h3> 
+             </li>
 
-            <img className='Creation_Image' src={Above} alt=""/>
-            <p className='Creation_Image_Text'>From up</p>
-            <p className='Second_Creation_Image_Text'>above vr</p>
+            <li className='above'>
+            <div class="card-overlay"></div>
+            <h3 className='Creation_Image_Text'>
+                from up
+               <br/>
+               above  vr
+           </h3>
+            </li>
+           
+            <li className='borealis'>
+            <div class="card-overlay"></div>
+            <h3 className='Creation_Image_Text'>
+                pocket <br/>
+                borealis
+                </h3>
+            </li>
+            
 
-            <img className='Creation_Image' src={Borealis} alt=""/>
-            <p className='Creation_Image_Text'>pocket</p>
-            <p className='Second_Creation_Image_Text'>borealis</p>
-
-            <img className='Creation_Image' src={Curiosity} alt=""/>
-            <p className='Creation_Image_Text'>the</p>
-            <p className='Second_Creation_Image_Text'>curiosity</p>
-          
-            <img className='Creation_Image' src={Fisheye} alt=""/>
-            <p className='Creation_Image_Text'>make it</p>
-            <p className='Second_Creation_Image_Text'>fisheye</p>
-            </section>
-
+            <li className='curiosity'>
+            <div class="card-overlay"></div>
+            <h3 className='Creation_Image_Text'>
+                the <br/>
+                curiosity
+            </h3>
+            </li>
+           
+          <li className='fisheye'>
+          <div class="card-overlay"></div>
+            <h3 className='Creation_Image_Text'>
+                make it <br/>
+                fisheye
+                </h3>
+            </li>
+            </ul>
+        
+            
             <div className='See_All'>
             <p>See all</p>
             </div>

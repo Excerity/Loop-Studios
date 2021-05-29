@@ -4,6 +4,7 @@ import styled, {createGlobalStyle} from "styled-components"
 import { Link } from "gatsby"
 
 
+
 const Global = createGlobalStyle`
 body {
     margin: 0;
@@ -28,7 +29,7 @@ z-index: 5;
 @media (min-width: 768px) {
     display: none;
 }
-
+ 
 
 div {
     width: 1.5rem;
@@ -91,6 +92,7 @@ a {
     margin-top: -9em;
 }
 `;
+
 const DesktopNav = styled.nav`
 display: none;
 
@@ -99,27 +101,32 @@ display: none;
      display: flex;
      flex-flow: row nowrap;
      justify-content: space-evenly;
+    // margin-top: -28em;
+    margin-left: 8em;
+
+.links {
+     padding-top: -4em;
+}
 
 .nav-links {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
     list-style-type: none;
-
+    color: black;
 }
-}
-
 
 
 li {
     margin-right: 1em;
     margin-top: 4em;
+    
 }
 
 a {
     text-decoration: none;
-    // color: white;
-
+    color: white;
+}
 `;
  
 const Navbar = () => {
@@ -131,7 +138,6 @@ const Navbar = () => {
         <nav className='Navbar'>
             <div>
             <Global />
-            <h5 id='Mobile_Title'>loopstudios</h5> 
             <MenuIcon nav={nav} onClick={() => showNav(!nav)}>
             <div />
             <div />
@@ -157,10 +163,11 @@ const Navbar = () => {
                 </li>
             </ul>
             </MenuLinks>
+            
             <DesktopNav>
             <ul className="nav-links">
             <li id='title'>
-            <Link to='#'>loopstudios</Link>
+            {/* <Link to='#'>loopstudios</Link> */}
             </li>
                 <li>
                     <Link to='#' className="Links">About</Link>
@@ -179,8 +186,9 @@ const Navbar = () => {
                 </li>
             </ul>
             </DesktopNav>
-            
+            <h5 id='Mobile_Title'>loopstudios</h5> 
             </div>
+
         </nav>
     )
 }

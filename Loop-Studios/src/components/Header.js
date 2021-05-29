@@ -3,21 +3,17 @@ import Navbar from "../components/Navbar"
 import Layout from './Layout'
 import Hero from '../../mobile/image-hero.jpg'
 import '../styles/Header.css'
-import MobileRect from './MobileRect'
-import LeaderInteractive from './LeaderInteractive'
-import CreationSection from './CreationSection'
-
+import DesktopHero from "../../desktop/image-hero.jpg"
 
 const Header = () => {
     return (
             <div className='Header'>
-            <Navbar/>
-            <img id='Hero' src={Hero} alt=""/>
-            <MobileRect/>
-            <LeaderInteractive/>
-            <CreationSection/>
+              <Navbar/>
+             <img className='Hero' src={Hero} alt=""/>
+             <img className='DesktopHero' src={DesktopHero} alt=""/>
             </div>
     )
+
 }
 
-export default Header
+export default Header           

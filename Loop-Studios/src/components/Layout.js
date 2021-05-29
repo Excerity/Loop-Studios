@@ -1,14 +1,24 @@
+
 import React from 'react'
+import CreationSection from './CreationSection'
+import Footer from './Footer'
 import Header from './Header'
+import LeaderInteractive from './LeaderInteractive'
+import HeaderRect from './HeaderRect'
+import '../styles/Header.css'
 
 
 const Layout = (props) => {
     return (
-        <div>
+        <div className='Container'>
             <Header/>
-           {props.children} 
+            <HeaderRect/>
+            <LeaderInteractive/>
+            <CreationSection/>
+            <Footer/>
         </div>
     )
 }
 
 export default Layout
+   
