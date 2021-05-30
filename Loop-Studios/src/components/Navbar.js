@@ -98,24 +98,7 @@ display: none;
 
 @media (min-width: 768px) {
  
-     display: flex;
-     flex-flow: row nowrap;
-     justify-content: space-evenly;
-    // margin-top: -28em;
-    margin-left: 8em;
-
-.links {
-     padding-top: -4em;
-}
-
-.nav-links {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    list-style-type: none;
-    color: black;
-}
-
+      display: flex;
 
 li {
     margin-right: 1em;
@@ -135,7 +118,7 @@ const Navbar = () => {
  
 
     return (
-        <nav className='Navbar'>
+        <div className='Navbar'>
             <div>
             <Global />
             <MenuIcon nav={nav} onClick={() => showNav(!nav)}>
@@ -163,12 +146,14 @@ const Navbar = () => {
                 </li>
             </ul>
             </MenuLinks>
-            
+
+
             <DesktopNav>
-            <ul className="nav-links">
-            <li id='title'>
-            {/* <Link to='#'>loopstudios</Link> */}
-            </li>
+            <h5 id='title'>
+            <Link to='#'>loopstudios</Link>
+            </h5>
+            <ul className="nav-links-new">
+
                 <li>
                     <Link to='#' className="Links">About</Link>
                 </li>
@@ -187,9 +172,10 @@ const Navbar = () => {
             </ul>
             </DesktopNav>
             <h5 id='Mobile_Title'>loopstudios</h5> 
+           
             </div>
-
-        </nav>
+            
+        </div>
     )
 }
 

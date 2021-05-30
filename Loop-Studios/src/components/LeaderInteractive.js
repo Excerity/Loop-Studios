@@ -1,7 +1,7 @@
 import React from 'react'
 import Vr from '../../mobile/image-interactive.jpg'
 import DesktopVr from '../../desktop/image-interactive.jpg'
-import '../styles/Header.css'
+import '../styles/index.css'
 
 
 function LeaderInteractive() {

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/Header.css'
+import '../styles/index.css'
 import Facebook from '../../images/icon-facebook.svg'
 import Twitter from '../../images/icon-twitter.svg'
 import Pinterest from '../../images/icon-pinterest.svg'

@@ -6,35 +6,37 @@
     padding: 0;
 }
 
-
+html:focus-within {
+    scroll-behavior: smooth;
+  }
 
  ul {
      list-style-type: none;
  }
 
+
 #Mobile_Title {
-    /* padding-top: 3em; */
+    padding-top: 1em;
     display: block;
-    /* top: 2em;  */
      margin-left: 1em; 
     text-decoration: none;
     font-size: 30px; 
     color: white;
     margin-top: 1em;
 }
-     /* margin-top: -14.5em; */
-  .Hero 
-  {
-     margin-top: -4em;
-     width: 100%;
-     min-height: 90vh;
-     background-size: cover;
-     position: relative;
-     background-position: center center;
-     z-index: -55;  
-     object-fit: cover; 
-    } 
 
+    .Header {
+        background-image: url('../../mobile/image-hero.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+        background-position: center center;
+        margin-top: -1.9em;
+
+    }
+
+
+ 
     .Desktop_Vr_Section {
         display: none;
     }
@@ -65,33 +67,28 @@
         display: inline-block;
         /* z-index: 43; */
     }
-    
-     .Border_Container {
-    
-        margin: auto;
-        margin-top: -36em;
-         width: 27em; 
-         height: 17em; 
-        height: 75%;
-        border: solid .5vw white;
-    } 
 
-     .Mobile_Border  {
+    .Border_Container {
+        display: grid;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        margin-top: -40em;
         color: white;
-        padding-left: .8em;
-        font-size: 43px;
-        margin-top: .3em;
-        text-transform: uppercase;
-        font-weight: 100; 
-        font-family: 'Alegreya Sans SC', sans-serif;
-        }
-        
-        .Desktop_Border {
-            display: none;
-        }
-        
-        
+        max-width: 1112px;
+    }
 
+    .Mobile_Border {
+        border: 1px solid white;
+        padding: 50px;
+        font-size: 43px;
+        text-transform: uppercase;
+    }
+        
+    .Desktop_Border {
+        display: none;
+    }
 
         /* Leader Interactive VR section */
         #Vr {
@@ -100,12 +97,12 @@
             margin-left: auto;
             margin-right: auto;
             width: 80%;
-            /* margin: auto; */
         }
 
         #Desktop_Vr {
             display: none;
         }
+
 
         @media (min-width: 768px) {
             #Vr {
@@ -117,7 +114,6 @@
                 padding-top: 8em;
                 height: auto;
                 margin: auto;
-                /* flex: 1 1 0px; */
        }
 
    }
@@ -340,26 +336,37 @@
 
  .footer_copyright {
   grid-area: copyright;
-  margin-bottom: 5em;
+  margin-bottom: 4em;
   margin-top: .5em;
 }  
 
   
 
    @media (min-width: 768px) {
+     .nav-links-new {
+        display: flex;
+        justify-content: center;
+        flex: 1;
+    } 
 
-       
-       .Hero {
+
+
+    #title {
+        color: white;
+        font-size: 30px;
+        margin-top: 1.8em;
+        margin-left: 4em;
+    }
+     
+
+       #Mobile_Title {
            display: none;
-       }
-       .DesktopHero {
-           display: block;
-           width: 100%;
        }
 
        .Header {
-           margin-top: -9.1em;
-           /* margin-bottom: 5em; */
+           background-image: url("../../desktop/image-hero.jpg");
+           /* margin-top: -9.1em; */
+           /* margin-bottom: 15em; */
        }
 
        .Vr_Section {
@@ -370,39 +377,13 @@
            display: flex;
            flex-direction: column;
            margin: auto;
+           margin-top: 15em;
        }
 
-           .Mobile_Border{
-               display: none;
-           }
-
-           .Border_Container { 
-              position: absolute;
-              margin-top: -14em;
-              width: 27em;
-              height: 10em;  
-              margin-left: 2em; 
-              border: solid .5vw white;
-            } 
-
-           .Desktop_Border  {
-               display: block;
-               color: white;
-               padding-left: .8em;
-               font-size: 43px;
-               text-transform: uppercase;
-               font-weight: 100; 
-               font-family: 'Alegreya Sans SC', sans-serif;
-           }
-
-           #Mobile_Title {
-             
-               margin-left: 2.5em;
-               position: absolute;
-               color: white;
-               margin-top: 3em;
-               z-index: 90;
-           }
+       .Border_Container {
+           margin-top: -30em;
+       }
+        
 
            .DesktopHero {
                margin-top: 4em;
@@ -443,7 +424,7 @@
             position: relative; 
             margin-right: 23%;
             max-width: 1158px;
-            margin: 0 auto;
+            margin: 11em auto;
        }
 
        .Creation-Section {
@@ -456,7 +437,7 @@
           max-width: 1112px;
           justify-content: center;
           align-content: center;
-           margin: 0 auto;
+           margin: auto;
        }
 
        .grid {
@@ -471,7 +452,7 @@
            top: -25%;
            width: 100;
            z-index: 10;
-        left: 5%;
+           left: 5%;
        }
 
 
@@ -608,4 +589,21 @@
            margin-top: 1em;
        }
 
+   }
+
+   @media (min-width: 1160px) {
+
+    .Mobile_Border {
+       display: none;
+    }
+
+    .Desktop_Border {
+        display: block;
+        border: 1px solid white;
+        padding: 50px;
+        font-size: 43px;
+        text-transform: uppercase;
+        padding-right: 200px;
+
+    } 
    }
