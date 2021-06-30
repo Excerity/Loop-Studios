@@ -113,6 +113,7 @@ a {
     text-decoration: none;
     color: white;
 }
+}
 `;
  
 const Navbar = () => {
