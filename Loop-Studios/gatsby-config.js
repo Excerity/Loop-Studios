@@ -18,7 +18,7 @@ module.exports = {
           families: ['Advent Pro, Alegreya Sans SC'],
         },
       },
-      pathPrefix: "https://excerity.github.io/Loop-Studios/",
+      pathPrefix: "/LoopStudios/",
     },
     `gatsby-plugin-sass`,
   ],

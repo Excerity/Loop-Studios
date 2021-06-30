@@ -68,13 +68,15 @@ const MenuLinks = styled.nav`
     font-size: 5vh;
     position: absolute;
     top: 0;
-    right 0;
+    right: 0;
     width: 100%;
     transition: transform 300ms;
     transform: ${({nav}) => (nav ? "translateX(0)" : "translateX(100%)")}; 
 
 ul {
     list-style-type: none;
+    margin-top: 1em;
+    margin-left: .5em;
 }
 
 li {
@@ -89,7 +91,8 @@ a {
 
 .Hamburger_Mobile_title{
     margin-left: .5em;
-    margin-top: -9em;
+    padding-top: -21px;
+    margin-top: -11.5em;
 }
 `;
 
@@ -127,7 +130,7 @@ const Navbar = () => {
             <div />
             </MenuIcon>
             <MenuLinks nav={nav}>
-                <h5 className='Hamburger_Mobile_title'> <a href='#'>loopstudios</a></h5>
+                <h5 className='Hamburger_Mobile_title'> <Link to='#'>loopstudios</Link></h5>
             <ul>
                 <li>
                     <Link to="/">About</Link>
